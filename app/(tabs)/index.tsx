@@ -1,11 +1,12 @@
-
 import {StyleSheet, View, Text, TouchableOpacity, Alert} from 'react-native';
+import {useRouter, Link} from "expo-router";
 
 
 export default function HomeScreen() {
   const handlePressButton = () => {
     Alert.alert("First Text", "It's a live!")
   }
+    const router = useRouter();
   return (
     <View style={styles.container}>
       <Text style={{
@@ -21,6 +22,14 @@ export default function HomeScreen() {
           Press me!
         </Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.productsBtn} onPress={()=>{
+        router.push("/products")
+      }}>
+        <Text>
+          Перейти до продуктів
+        </Text>
+      </TouchableOpacity>
+      <Link style={styles.productsBtn} href={"/products"}>Продукти</Link>
     </View>
   );
 }
@@ -36,5 +45,11 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     backgroundColor: '#fff',
-  }
+  },
+    productsBtn: {
+    marginTop: 20,
+    padding: 10,
+    borderRadius: 5,
+    backgroundColor: '#ffcc00',
+    }
 });
