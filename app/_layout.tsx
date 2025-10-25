@@ -8,6 +8,7 @@ export default function RootLayout() {
 
             {/* For different archive page */}
             <Stack.Screen name={"products/index"} options={{title: "Products"}}/>
+            <Stack.Screen name={"sidebar/index"} options={{title: "Sidebar"}}/>
 
             {/* For single page */}
             <Stack.Screen name={"products/[id]"} options={{title: "Product Details"}}/>
