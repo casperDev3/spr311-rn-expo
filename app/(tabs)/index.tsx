@@ -27,7 +27,9 @@ export default function HomeScreen() {
                 </TouchableOpacity>
 
                 <View style={styles.linksContainer}>
+                    <Link style={styles.link} href={"/chat"}>🤖 AI chat</Link>
                     <Link style={styles.link} href={"/products"}>🛍️ Продукти</Link>
+                    <Link style={styles.link} href={"/posts"}>📄 Пости</Link>
                     <Link style={styles.link} href={"/sidebar"}>📂 Sidebar</Link>
                     <Link style={styles.link} href={"/sliders"}>🎚️ Повзунки</Link>
                     <Link style={styles.link} href={"/bottomSheet"}>📄 Bottom Sheet</Link>
