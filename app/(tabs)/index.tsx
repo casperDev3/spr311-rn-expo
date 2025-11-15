@@ -27,6 +27,7 @@ export default function HomeScreen() {
                 </TouchableOpacity>
 
                 <View style={styles.linksContainer}>
+                    <Link style={styles.link} href={"/systems"}>🎠 Системні дозволи</Link>
                     <Link style={styles.link} href={"/chat"}>🤖 AI chat</Link>
                     <Link style={styles.link} href={"/products"}>🛍️ Продукти</Link>
                     <Link style={styles.link} href={"/posts"}>📄 Пости</Link>
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     },
     card: {
         width: '85%',
-        paddingVertical: 30,
+        paddingVertical: 14,
         paddingHorizontal: 20,
         backgroundColor: 'rgba(255, 255, 255, 0.1)',
         borderRadius: 20,
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
         shadowColor: '#ffd166',
         shadowOpacity: 0.4,
         shadowRadius: 6,
-        marginBottom: 20,
+        marginBottom: 6,
     },
     btnText: {
         fontWeight: '600',
@@ -101,7 +102,7 @@ const styles = StyleSheet.create({
     },
     linksContainer: {
         width: '100%',
-        marginTop: 15,
+        marginTop: 8,
     },
     link: {
         textAlign: 'center',

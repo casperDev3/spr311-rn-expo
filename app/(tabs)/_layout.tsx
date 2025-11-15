@@ -23,8 +23,6 @@ export default function TabLayout() {
                 tabBarStyle: {
                     position: 'absolute',
                     bottom: 20,
-                    // left: width * 0.05,
-                    // right: 0,
                     height: 60,
                     borderRadius: 25,
                     width: width * 0.84,
@@ -83,6 +81,7 @@ export default function TabLayout() {
 function TabIcon({ name, color, focused }: { name: string; color: string; focused: boolean }) {
     return (
         <View style={[styles.iconContainer, focused && styles.activeIcon]}>
+            {/* @ts-ignore */}
             <IconSymbol size={26} name={name} color={color} />
         </View>
     );
