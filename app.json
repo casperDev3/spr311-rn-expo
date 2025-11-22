@@ -4,7 +4,7 @@
     "slug": "spr311-rn-expo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/app_icon.png",
     "scheme": "spr311rnexpo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,23 +14,24 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/app_icon.png",
+        "backgroundImage": "./assets/images/app_icon.png",
+        "monochromeImage": "./assets/images/app_icon.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.casper3.spr311rnexpo"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/app_icon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/app_icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -44,6 +45,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e57d5f2f-d790-4b23-a5a2-ba23bf29282f"
+      }
+    },
+    "owner": "casper3"
   }
 }
